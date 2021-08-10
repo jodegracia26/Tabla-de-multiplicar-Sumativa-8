@@ -7,6 +7,10 @@ int main() {
 	
 	printf("\nIngrese un numero positivo: ");
 	scanf("%d", &n);
+    while(n<0){
+        printf("Ingrese un numero entero, positivo: ");
+        scanf("%d", &n);
+}   
 	
 	for (i=1; i<=10; i++) { // el loop corre de i=1 a i=10. En cada interacion del loop, n * 1 es impreso.
 		printf("%d * %d = %d \n", n, i, n * i);
